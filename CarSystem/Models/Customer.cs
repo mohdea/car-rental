@@ -26,5 +26,16 @@ namespace CarSystem.Models
         public string PhoneNumber { get; set; }
 
         public string Email { get; set; }
+
+        public void selfUpdate(Customer x)
+        {
+            if (!string.IsNullOrWhiteSpace(x.Name))
+                this.Name = x.Name;
+            if (!string.IsNullOrWhiteSpace(x.Email))
+                this.Email = x.Email;
+
+            this.CPR = x.CPR;
+            this.PhoneNumber = x.PhoneNumber;
+        }
     }
 }
