@@ -61,3 +61,14 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# GitHub language statistics
+# 
+# Remove third party libraries from project language statistics.
+###############################################################################
+**/*bootstrap* linguist-vendored
+**/*jquery* linguist-vendored
+**/*modernizr* linguist-vendored
+**/*respond* linguist-vendored
+**/*glyphicons* linguist-vendored
