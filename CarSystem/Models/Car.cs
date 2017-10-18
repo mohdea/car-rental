@@ -33,8 +33,18 @@ namespace CarSystem.Models
         [DisplayName("Rate Per Day")]
         public int RatePerDay { get; set; }
         public string ImageURL { get; set; }
-      
-    }
 
+        public void selfUpdate(Car x)
+        {
+            this.ID = x.ID;
+            this.ImageURL = x.ImageURL;
+            this.Make = x.Make;
+            this.Model = x.Model;
+            this.RatePerDay = x.RatePerDay;
+            this.Transmission = x.Transmission;
+            this.Type = x.Type;
+            this.Year = x.Year;
+        }
+    }
 
 }
